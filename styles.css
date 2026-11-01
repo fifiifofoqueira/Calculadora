@@ -1,31 +1,57 @@
-/* Container que define a grade */
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(3, 40px); /* 3 colunas de 100px */
-            grid-template-rows: repeat(4, 40px);    /* 3 linhas de 100px */
-            gap: 10px;                               /* Espaçamento entre os quadrados */
-            background-color: #f0f0f0;
-            padding: 10px;
-            width: fit-content;
-        }
+/* Configuração básica para alinhar os elementos na tela */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f4f9;
+  gap: 15px; /* Espaço entre o container e os botões */
+}
 
-        /* Estilo dos quadrados (itens da grade) */
-        .grid-item {
-            background-color: #3498db;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: sans-serif;
-            font-weight: bold;
-            cursor: pointer;
-            user-select: none;
-        }
+/* O seu Container Responsivo */
+#container {
+  width: 40vw;            
+  max-width: 300px;       
+  min-width: 200px; /* Ajustado para alinhar melhor com os botões */      
+  background-color: #cacaca;
+  box-sizing: border-box;
+  border: 0.6rem solid #f0f0f0; 
+  padding: 0.8rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-        .grid-item:hover {
-            background-color: #2980b9;
-        }
-        
-        #btn0 {
-            grid-column: span 2; /* Faz o elemento ocupar 2 colunas */
-        }
+#container p {
+  margin: 0;
+  font-size: 1.2rem;      
+  text-align: center;
+  word-break: break-word; 
+}
+
+/* Estilização da Grade de Botões (Grid) */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanhos iguais */
+  gap: 8px;
+  width: 40vw;
+  max-width: 300px;
+  min-width: 200px;
+}
+
+.grid-item {
+  padding: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Faz o botão zero ocupar o espaço correto se necessário */
+.btn-zero {
+  grid-column: span 1; 
+}
