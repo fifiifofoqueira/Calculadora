@@ -1,0 +1,31 @@
+/* Container que define a grade */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 40px); /* 3 colunas de 100px */
+            grid-template-rows: repeat(4, 40px);    /* 3 linhas de 100px */
+            gap: 10px;                               /* Espaçamento entre os quadrados */
+            background-color: #f0f0f0;
+            padding: 10px;
+            width: fit-content;
+        }
+
+        /* Estilo dos quadrados (itens da grade) */
+        .grid-item {
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .grid-item:hover {
+            background-color: #2980b9;
+        }
+        
+        #btn0 {
+            grid-column: span 2; /* Faz o elemento ocupar 2 colunas */
+        }
