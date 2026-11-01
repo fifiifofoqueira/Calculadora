@@ -35,7 +35,7 @@ body {
 /* Estilização da Grade de Botões (Grid) */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanhos iguais */
+  grid-template-columns: repeat(5, 1fr); /* 3 colunas de tamanhos iguais */
   gap: 8px;
   width: 40vw;
   max-width: 300px;
@@ -52,6 +52,6 @@ body {
 }
 
 /* Faz o botão zero ocupar o espaço correto se necessário */
-.btn-zero {
-  grid-column: span 1; 
+#btn0 {
+  grid-column: span 2; 
 }
