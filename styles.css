@@ -11,6 +11,14 @@ body {
   gap: 15px; /* Espaço entre o container e os botões */
 }
 
+#total {
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 10px;
+  border-width: 10px;
+  border-style: solid;
+}
+
 /* O seu Container Responsivo */
 #container {
   width: 40vw;            
@@ -18,7 +26,8 @@ body {
   min-width: 200px; /* Ajustado para alinhar melhor com os botões */      
   background-color: #cacaca;
   box-sizing: border-box;
-  border: 0.6rem solid #f0f0f0; 
+  margin-bottom: 0.6rem;
+
   padding: 0.8rem; 
   display: flex;
   align-items: center;
