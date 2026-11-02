@@ -55,3 +55,9 @@ body {
 #btn0 {
   grid-column: span 2; 
 }
+
+
+#CalcularBotao {
+  grid-column: span 5;
+}
+
