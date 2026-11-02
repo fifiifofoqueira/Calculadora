@@ -7,7 +7,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  background-color: #f4f4f9;
+  background-color: #3c3cc7;
   gap: 15px; /* Espaço entre o container e os botões */
 }
 
@@ -23,6 +23,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 #container p {
@@ -48,8 +49,8 @@ body {
   cursor: pointer;
   background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 4px;
-}
+  border-radius: 8px;
+  }
 
 /* Faz o botão zero ocupar o espaço correto se necessário */
 #btn0 {
@@ -61,3 +62,7 @@ body {
   grid-column: span 5;
 }
 
+.grid-item.simbls {
+    background-color: #444;
+    color: white;
+}
